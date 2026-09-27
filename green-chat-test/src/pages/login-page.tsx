@@ -33,7 +33,7 @@ export function LoginPage() {
             type="text"
             value={idInstance}
             onChange={(e) => setIdInstance(e.target.value)}
-            placeholder="1101000000"
+            placeholder="idInstance"
             autoComplete="off"
             required
             disabled={isLoading}
@@ -46,7 +46,7 @@ export function LoginPage() {
             type="password"
             value={apiTokenInstance}
             onChange={(e) => setApiTokenInstance(e.target.value)}
-            placeholder="api token"
+            placeholder="apiTokenInstance"
             autoComplete="off"
             required
             disabled={isLoading}
@@ -59,7 +59,7 @@ export function LoginPage() {
             type="url"
             value={apiUrl}
             onChange={(e) => setApiUrl(e.target.value)}
-            placeholder="https://1100.api.green-api.com"
+            placeholder="https://4100.api.green-api.com"
             autoComplete="off"
             required
             disabled={isLoading}
