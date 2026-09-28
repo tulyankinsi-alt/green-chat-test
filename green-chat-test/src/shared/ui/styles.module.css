@@ -1,0 +1,12 @@
+.form-input label {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.form-input span {
+  font-size: 0.8rem;
+  color: var(--danger) !important;
+}

@@ -1,6 +1,5 @@
-import { ChatPage } from "../pages/chat-page/chat-page";
-import { LoginPage } from "../pages/login-page";
-import { useAuthStore } from "../store/auth-store"
+import { ChatPage, LoginPage } from "../pages";
+import { useAuthStore } from "../store";
 
 export default function App() {
   const isLoggedIn = useAuthStore((s) => s.idInstance);

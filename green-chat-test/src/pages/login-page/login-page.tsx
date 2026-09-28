@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import { useAuthStore } from '../store/auth-store'
+
 import { useForm } from 'react-hook-form';
-import type { BaseAuthParams } from '../shared/types/base';
-import { FormInput } from '../shared/ui/form-input';
+
+import styles from './styles.module.css';
+import { useAuthStore } from '../../store';
+import type { BaseAuthParams } from '../../shared/types';
+import { FormInput } from '../../shared/ui';
 
 export function LoginPage() {
   const login = useAuthStore((s) => s.login);
@@ -22,11 +25,11 @@ export function LoginPage() {
   }
 
   return (
-    <div className="login-page">
-      <form className="login-card" onSubmit={handleSubmit(onSubmit)}>
+    <div className={styles.loginPage}>
+      <form className={styles.loginCard} onSubmit={handleSubmit(onSubmit)}>
         <h1>Telegram</h1>
 
-        <p className="login-hint">
+        <p className={styles.loginHint}>
           Введите данные инстанса <a href='https://green-api.com/telegram' target='_blank'>GREEN-API</a>
         </p>
 
@@ -59,7 +62,7 @@ export function LoginPage() {
           })}
         />
 
-        <button type="submit" className="btn-primary" disabled={isLoading}>
+        <button type="submit" className={styles.btnPrimary} disabled={isLoading}>
           {isLoading ? 'Вход...' : 'Войти'}
         </button>
       </form>

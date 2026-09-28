@@ -1,4 +1,6 @@
 import type { UseFormRegisterReturn } from "react-hook-form";
+import styles from './styles.module.css';
+
 
 type FormInputProps= {
   label: string;
@@ -14,7 +16,7 @@ export function FormInput({
   register
 }: FormInputProps) {
   return (
-    <div className="form-input">
+    <div className={styles.formInput}>
       <label>{label}</label>
 
       <input
