@@ -23,8 +23,9 @@ export function LoginPage() {
     <div className="login-page">
       <form className="login-card" onSubmit={handleSubmit}>
         <h1>Telegram</h1>
+
         <p className="login-hint">
-          Введите данные инстанса GREEN-API
+          Введите данные инстанса <a href='https://green-api.com/telegram' target='_blank'>GREEN-API</a>
         </p>
 
         <label>

@@ -13,6 +13,7 @@
   --border: #0e1621;
   --danger: #e53935;
   --radius: 12px;
+  --logo-text: #22C55E;
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.4;
   font-weight: 400;
@@ -79,12 +80,6 @@ input {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
 }
 
-.login-logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4px;
-}
-
 .login-card h1 {
   margin: 0;
   text-align: center;
@@ -92,11 +87,18 @@ input {
   font-weight: 600;
 }
 
+
 .login-hint {
   margin: 0 0 8px;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.login-hint a {
+  text-decoration: none;
+  color: var(--logo-text);
+  font-weight: 600;
 }
 
 .login-card label {
